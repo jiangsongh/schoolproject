@@ -1,0 +1,128 @@
+.detail-nav{
+	min-height: 1200px;
+}
+.detail-first-title{
+	height: 50px;
+    margin-top: 20px;
+}
+.detail-first-title>span:nth-child(1){
+	width: 70px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid;
+    color: #000;
+    border-radius: 5px;
+}
+.detail-first-title>span:nth-child(2){
+	font-size: 32px;
+    text-align: center;
+    display: inline-block;
+    width: 80%;
+}
+
+.div-detail{
+	position: relative;
+	top: 30px;
+	margin-bottom: 20px;
+}
+.div-detail a{
+    display: inline-block;
+    margin-right: 40px;
+    color: #666;
+    text-decoration: none;
+    font-size: 18px;
+}
+.div-detail>div:nth-child(1){
+	width: 400px;
+    height: 402px;
+    display: inline-block;
+}
+.div-detail>div:nth-child(1)>div:nth-child(1)>img{
+	width: 80%;
+    height: 80%;
+    margin: auto;
+    display: block;
+}
+.div-detail>div:nth-child(1)>div:nth-child(1){
+	border:1px solid #d8d8d8;
+}
+.div-detail>div:nth-child(1)>div:nth-child(2){
+	border: 1px solid #666;
+    width: 85px;
+    height: 81.59px;
+}
+.div-detail>div:nth-child(1)>div:nth-child(2)>img{
+	width: 100%;
+    height: 100%;
+}
+
+.div-detail>div:nth-child(2){
+	width: 450px;
+    height: 400px;
+    display: inline-block;
+    margin-left: 60px;
+    position: absolute;
+    top: 0px;
+}
+.btn-add,.btn-add1,.btn-add2,.btn-add3{
+	display: inline-block;
+    width: 107px;
+    height: 40px;
+    margin: 15px;
+    border-radius: 7px;
+    font-size: 17px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #ff0036;
+    border: 1px solid #ff0036;
+    color: #fff;
+}
+
+.div-detail>div:nth-child(2)>h2{
+	font-weight: bold;
+	font-size: 26px;
+}
+.div-detail>div:nth-child(2) div{
+	margin: 10px 0px;
+}
+.div-detail>div:nth-child(2)>div>span:first-child{
+	font-size: 18px;
+}
+.div-detail>div:nth-child(2)>div>span:nth-child(2){
+	font-size: 18px;
+    color: #ff0036;
+    font-weight: bolder;
+}
+.detail-div{
+	width: 100%;
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    color: #FF0036;
+    margin-bottom: 20px;
+}
+.detail-div>p{
+	width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 19px;
+    font-weight: bold;
+    padding-left: 10px;
+    border: 1px solid #dfdfdf;
+}
+.detail-img{
+	width: 400px;
+    display: inline-block;
+}
+.detail-div-nav{
+	width: 800px;
+    margin: 20px auto;
+}
+.detail-div-nav img{
+	width: 100%;
+    display: block;
+    margin: 10px auto;
+}

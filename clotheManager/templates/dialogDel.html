@@ -1,0 +1,12 @@
+<div class="dialog" ng-show="state">
+    <div class="dialogContent">
+        <div class="dialogContent-heard">{{title}}</div>
+        <div class="dialogContent-mid">
+            <div>您确定要删除  栏目:{{clear.name}}  吗?</div>
+        </div>
+        <div class="dialogContent-fotter">
+            <button class="btn btn-danger" ng-click="alertDel();">{{del}}</button>
+            <button class="btn btn-default" ng-click="alertCancel();">取消</button>
+        </div>
+    </div>
+</div>

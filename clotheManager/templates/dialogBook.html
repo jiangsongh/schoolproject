@@ -1,0 +1,19 @@
+<div class="dialog" ng-show="state">
+    <div class="dialogContent">
+        <div class="dialogContent-heard">{{title}}</div>
+        <div class="dialogContent-mid">
+            <div>
+                <span>名称</span>
+                <input type="text" ng-model="datacolumn.name"/>
+            </div>
+            <div>
+                <span>优先级</span>
+                <input type="text" ng-model="datacolumn.priority"/>
+            </div>
+        </div>
+        <div class="dialogContent-fotter">
+            <button class="btn btn-primary" ng-click="alertPass();">{{add}}</button>
+            <button class="btn btn-default" ng-click="alertCancel();">取消</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+
+.mainBody
+{
+    width: 100%;
+}
+.mainBody>div
+{
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+}
+.mainBody>div>div
+{
+    width: 200px;
+    height: 200px;
+    background-color: #285e8e;
+    color: wheat;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+    margin-left: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+.mainBody>div>div:nth-child(1)
+{
+    margin-left: 0px;
+}
+.mainBody>div>div>span
+{
+    display: block;
+    line-height: 100px;
+}
+.mainBody>div>div>span:nth-child(1)
+{
+    font-size: 30px;
+}
+.mainBody>div>div:hover
+{
+    transform: scale(1.2,1.2);
+    transition: transform 0.8s;
+}

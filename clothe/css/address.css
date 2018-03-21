@@ -1,0 +1,36 @@
+.address-body{
+	width: 48%;
+    margin: auto;
+    padding: 15px;
+}
+.address-form>div{
+	margin: 10px;
+    height: 36px;
+    /*width: 275px;*/
+    margin-bottom: 20px;
+}
+.address-form>div>span:nth-child(1){ 
+	height: 36px;
+    display: inline-block;
+    line-height: 36px;
+    width: 100px;
+    float: left;
+    font-size: 18px;
+}
+.address-form>div>span:nth-child(2){
+    display: inline-block;
+    float: right;
+    height: 36px;
+    line-height: 36px;
+}
+.address-form>div>input{
+	height: 35px;
+    margin-right: 5px;
+    /*float: right;*/
+}
+.address-form button{
+    width: 100px;
+    height: 40px;
+    display: block;
+    margin-left: 38%;
+}

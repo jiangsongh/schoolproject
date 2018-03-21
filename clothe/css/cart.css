@@ -1,0 +1,22 @@
+table th{
+	text-align: center;
+}
+table th:nth-child(1){
+	width: 40%;
+}
+table th:not(:nth-child(1)){
+	width: 10%;
+}
+table td:not(:nth-child(1)){
+	height: 97px;
+	text-align: center;
+}
+table td:not(:nth-child(1))>span{
+	height: 97px;
+	line-height: 97px;
+}
+.btn-delAll{
+	cursor: pointer;
+	text-decoration: none;
+	color: red;
+}

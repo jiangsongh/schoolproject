@@ -1,0 +1,130 @@
+问题：
+	1、管理web前端所有js脚本库(包)
+	2、更新
+
+解决方案： 包资源管理器(npm)(Node.js Package Management)
+
+
+准备工作
+
+	1、安装Node.js
+		Node.js:javascript的服务器端运行环境
+
+	
+	2、安装npm(Node.js集成)
+
+		npm init:初始化项目
+
+		npm install:安装 js包(插件)
+			-g:全局安装
+			--save:本地安装(特定项目)
+			--save-dev:本地安装开发版
+
+		npm uninstall:卸载js包
+
+	3、安装git
+		git:分布式版本控制工具
+
+
+	4、cnpm(淘宝镜像)
+
+	npm的问题：依赖网络环境，并且资源一般都在国外，使用npm下载资源时，会经常失败或很慢
+
+
+	5、bower
+		bower:web前端的包管理器
+		
+		第1步：安装bower(通过npm) 
+			cnpm install -g bower
+
+		第2步：项目包的管理
+			-1- 初始化 bower init
+			-2- 安装前端的包:bower install(uninstall)
+
+
+
+
+
+
+
+
+
+
+
+1、安装cnpm：npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+	如果慢：ctrl+c	-> 再执行
+
+2、安装全局bower:npm install -g bower
+
+3、初始化项目
+	方式一：npm init
+
+	方式二：bower init
+
+4、安装客户端JS组件 
+	方式一：cnpm install --save-dev 名称
+
+	方式二：bower install --save-dev 名称
+
+
+
+管理平台
+
+	1、广告信息管理(暂不做)
+
+	2、栏目信息管理+栏目图书管理
+
+	3、图书分类管理
+
+	4、图书信息管理
+
+	5、图书入库管理
+
+	6、订单信息管理
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

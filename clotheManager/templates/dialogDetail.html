@@ -1,0 +1,27 @@
+<div class="dialog" ng-show="state">
+    <div class="dialogContent">
+        <div class="dialogContent-heard">{{title}}</div>
+        <div class="dialogContent-mid">
+            <div>
+                <span>标题</span>
+                <input type="text" ng-model="datacolumn.title"/>
+            </div>
+            <div>
+                <span>简介</span>
+                <input type="text" ng-model="datacolumn.titleEm"/>
+            </div>
+            <div>
+                <span>内容</span>
+                <textarea name="" cols="30" rows="10" ng-model="datacolumn.text"></textarea>
+            </div>
+            <div>
+                <span>发布时间</span>
+                <input type="text" ng-model="datacolumn.createTime"/>
+            </div>
+        </div>
+        <div class="dialogContent-fotter">
+            <!--<button class="btn btn-primary" ng-click="alertPass();">{{add}}</button>-->
+            <button class="btn btn-default" ng-click="alertCancel();">返回</button>
+        </div>
+    </div>
+</div>

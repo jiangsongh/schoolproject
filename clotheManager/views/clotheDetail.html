@@ -1,0 +1,51 @@
+<div>
+    <div class="header" style="top: 12px">当前位置：服装详情</div>
+    <div>
+        <button class="btn btn-success" style="margin-left: 50px;margin-top: 20px" ng-click="back();">返回上一页</button>
+    </div>
+    <form method="post" name="myForm" novalidate ng-submit="save()">
+        <div class="addBook">
+            <div>
+                <div>
+                    <img ng-src="../../home/img/{{thisDetail[0][4]}}" ng-click="showFile()" width="200" height="200">
+                    <input type="file" style="display: none" id="clotheFile">
+                    <p>{{thisDetail[0][1]}}</p>
+                </div>
+                <div>
+                    <div>
+                        <span>名称:</span>
+                        <span>{{thisDetail[0][1]}}</span>
+                    </div>
+                    <div>
+                        <span>价格:</span>
+                        <span>{{thisDetail[0][2]}}</span>
+                    </div>
+                    <div>
+                        <span>颜色:</span>
+                        <span>{{thisDetail[0][3]}}</span>
+                    </div>
+                    <div>
+                        <span>风格：</span>
+                        <span>{{thisDetail[0][7]}}</span>
+                    </div>
+                    <div>
+                        <span>类别：</span>
+                        <span>{{thisDetail[0][9]}}</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <span>简介：</span>
+                <br/>
+                <div>
+                    <img ng-src="../../home/img/{{thisDetail[0][4]}}" ng-click="showJian()" width="200" height="200">
+                </div>
+            </div>
+            <!--<div>-->
+                <!--&lt;!&ndash;<button type="submit" class="btn btn-info">保存</button>&ndash;&gt;-->
+                <!--<button type="button" class="btn btn-default" ng-click="back()">取消</button>-->
+            <!--</div>-->
+        </div>
+    </form>
+</div>
+<jsh-alert alert-state="alertState" alert-mes="{{alertMessage}}" alert-show="close()"></jsh-alert>

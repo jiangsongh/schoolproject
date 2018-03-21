@@ -1,0 +1,53 @@
+<div>
+    <div class="header" style="top: 12px">当前位置：编辑服装</div>
+    <div>
+        <button class="btn btn-success" style="margin-left: 50px;margin-top: 20px" ng-click="back();">返回上一页</button>
+    </div>
+    <form method="post" name="myForm" novalidate ng-submit="save()">
+        <div class="addBook">
+            <div>
+                <div>
+                    <img ng-src="image/2.jpg" ng-click="showFile()" width="200" height="200">
+                    <input type="file" style="display: none" id="clotheFile">
+                    <p>{{addFileName}}</p>
+                </div>
+                <div>
+                    <div>
+                        <span>名称:</span>
+                        <input type="text" name="name" ng-model="addClotheMes.name" required>
+                    </div>
+                    <div>
+                        <span>价格:</span>
+                        <input type="text" name="price" ng-model="addClotheMes.price" required>
+                    </div>
+                    <div>
+                        <span>颜色:</span>
+                        <input type="text" name="colour" ng-model="addClotheMes.colour" required>
+                    </div>
+                    <div>
+                        <span>风格：</span>
+                        <select ng-model="styleSelected" ng-options="item.id as item.name for item in styleList"></select>
+                    </div>
+                    <div>
+                        <span>类别：</span>
+                        <select ng-model="categorySelected" ng-options="item.id as item.name for item in categoryList"></select>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <span>简介：</span>
+                <br/>
+                <div>
+                    <img ng-src="image/3.jpg" ng-click="showJian()" width="200" height="200">
+                    <input type="file" style="display: none" id="clotheJian">
+                    <p>{{addClotheName}}</p>
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-info">保存</button>
+                <button type="button" class="btn btn-default" ng-click="back()">取消</button>
+            </div>
+        </div>
+    </form>
+</div>
+<jsh-alert alert-state="alertState" alert-mes="{{alertMessage}}" alert-show="close()"></jsh-alert>

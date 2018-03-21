@@ -1,0 +1,55 @@
+<div>
+    <div class="header" style="top: 12px">当前位置：栏目详情管理模块</div>
+    <button class="btn btn-success backBtn" ng-click="back();">返回上一页</button>
+    <div class="columnDetail-content">
+        <div class="basicColumnDetail">
+            <div>{{sectionName.Name}}栏目详情</div>
+            <div class="basic">
+                <label>栏目名称:</label>
+                <span>{{sectionName.Name}}</span>
+            </div>
+            <div class="basic">
+                <label>优先级:</label>
+                <span>{{sectionName.Priority}}</span>
+            </div>
+        </div>
+        <div class="columnDetailBooks">
+            <div>图书列表信息({{booksLength}}本)
+                <button class="btn btn-primary addBookBtn">添加</button>
+            </div>
+            <table class="table table-bordered columnTable">
+                <thead  class="actived">
+                    <th>
+                        <input type="checkbox"/>
+                        <span>全选</span>
+                    </th>
+                    <th>图书名称</th>
+                    <th>作者</th>
+                    <th>出版社</th>
+                    <th>出版日期</th>
+                    <th>操作</th>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in booksList">
+                        <td>
+                            <input type="checkbox"/>
+                        </td>
+                        <td>
+                            <div class="columnDetailIcon">
+                                <img ng-src="{{item.Book.Image}}"/>
+                            </div>
+                            <span>{{item.Book.Name}}</span>
+                        </td>
+                        <td>{{item.Book.Author.Name}}</td>
+                        <td>{{item.Book.Publisher.Name}}</td>
+                        <td>{{item.Book.PublishDate}}</td>
+                        <td>
+                            <button class="btn btn-danger">移除</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="btn btn-danger allDel">批量移除</button>
+        </div>
+    </div>
+</div>

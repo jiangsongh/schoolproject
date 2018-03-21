@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>服装网站管理平台</title>
+    <link rel="stylesheet" href="lib/css/reset.css"/>
+    <link rel="stylesheet" href="lib/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/column.css"/>
+    <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="css/message.css"/>
+    <link rel="stylesheet" href="css/addBook.css"/>
+    <script>
+        var link = sessionStorage.getItem('login');
+        if (link == null) {
+            location.href = 'login.html';
+        }
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="margin-left: 15px">服装管理中心</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right" style="margin-right: 15px">
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--头部-->
+<div class="library-top">
+    <img src="image/uiface2.png" alt="" class="library-img"/>
+    Welcome back <span id="userSpan"></span>
+</div>
+
+<!--左侧-->
+<div class="library-left">
+    <ul class="library-ul">
+        <li ui-sref-active="active">
+            <a ui-sref="home" >
+                <i class="glyphicon glyphicon-home"></i>
+                <span>控制面板</span>
+            </a>
+        </li>
+        <li ui-sref-active="active">
+            <a ui-sref="style" >
+                <i class="glyphicon glyphicon-list"></i>
+                <span>风格栏目管理</span>
+            </a>
+        </li>
+        <li ui-sref-active="active">
+            <a ui-sref="category" >
+                <i class="glyphicon glyphicon-cd"></i>
+                <span>类型栏目管理</span>
+            </a>
+        </li>
+        <li ui-sref-active="active">
+            <a ui-sref="clothes" >
+                <i class="glyphicon glyphicon-globe"></i>
+                <span>资讯信息管理</span>
+            </a>
+        </li>
+        <li ui-sref-active="active">
+            <a ui-sref="message" >
+                <i class="glyphicon glyphicon-user"></i>
+                <span>服装栏目管理</span>
+            </a>
+        </li>
+        <li ui-sref-active="active">
+            <a ui-sref="order">
+                <i class="glyphicon glyphicon-th"></i>
+                <span>订单信息管理</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!--中间-->
+<div class="library-content">
+    <ui-view></ui-view>
+</div>
+
+<script src="lib/js/jquery.min.js"></script>
+<script src="lib/js/bootstrap.min.js"></script>
+<script src="lib/js/angular.min.js"></script>
+<script src="lib/js/angular-ui-router.min.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/directives.js"></script>
+<script src="js/services.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

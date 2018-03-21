@@ -1,0 +1,157 @@
+/*栏目*/
+.page-content{
+    width: 90%;
+    margin-left: 80px;
+}
+.addBtn{
+    margin: 30px 0px;
+}
+/*.tdItem>td{*/
+    /*width: 25%;*/
+/*}*/
+.btnItems>button{
+    margin-right: 6px;
+}
+.columnDetail-content{
+    margin-top: 10px;
+    margin-left: 80px;
+    width: 90%;
+}
+.basicColumnDetail,.columnDetailBooks{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.basicColumnDetail>div:first-child,.columnDetailBooks>div:first-child{
+    height: 42px;
+    line-height: 42px;
+    background-color: #F2F2F2;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding: 0px 6px;
+    box-sizing: border-box;
+}
+.basic{
+    height: 48px;
+    line-height: 48px;
+    color: #999;
+    padding: 0px 6px;
+    box-sizing: border-box;
+}
+.basic>label{
+    width: 100px;
+}
+.columnDetailBooks{
+    margin-top: 10px;
+}
+.columnTable{
+    width: 90%;
+    margin:10px auto;
+}
+.actived{
+    background-color: #f2f2f2;
+}
+.columnDetailIcon{
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+.columnDetailIcon>img{
+    display: block;
+    width: 100%;
+
+}
+.columnDetailIcon>span{
+    display: block;
+    float: left;
+}
+.allDel{
+    margin: 10px 48px;
+}
+.backBtn{
+    margin-left: 78px;
+    margin-top: 30px;
+}
+.addBookBtn {
+    float: right;
+    margin: 3px;
+}
+/*模式框*/
+.dialog {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 916px;
+    background-color: rgba(0,0,0,0.3);
+}
+.dialogContent{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.dialogContent-heard{
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+.dialogContent-mid{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.dialogContent-mid>div{
+    height: 48px;
+    line-height: 48px;
+}
+.dialogContent-mid>div:nth-child(3){
+    height: 400px;
+}
+.dialogContent-mid>div:nth-child(3)>textarea{
+    margin: 0px;
+    height: 335px;
+    width: 583px;
+}
+.dialogContent-mid>div:after,.dialogContent-fotter:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.dialogContent-mid>div>span{
+    display: block;
+    float: left;
+    width: 120px;
+}
+.dialogContent-mid>div>input {
+    display: block;
+    float: left;
+    margin-left: 16px;
+    height: 28px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    width: 70%;
+}
+.dialogContent-mid>div{
+    text-align: center;
+}
+
+.dialogContent-fotter{
+    width: 100%;
+}
+.dialogContent-fotter>button:first-child{
+    margin-top: 10px;
+    float: right;
+    margin-right: 24px;
+}
+.dialogContent-fotter>button:last-child{
+    margin-top: 10px;
+    margin-right: 16px;
+    float: right;
+}

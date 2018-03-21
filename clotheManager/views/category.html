@@ -1,0 +1,32 @@
+<div>
+    <div class="header" style="top: 12px">当前位置：类别信息管理模块</div>
+    <hr/>
+    <div class="page-content">
+        <button type="button" class="btn btn-primary addBtn" ng-click="addCategory();">添加</button>
+        <table class="table  table-striped">
+            <thead>
+            <th>栏目序号</th>
+            <th>栏目名称</th>
+            <th>优先级</th>
+            <th>操作</th>
+            </thead>
+            <tbody>
+            <tr ng-repeat="item in categoryList | orderBy:'priority':true" class="tdItem">
+                <td>{{$index+1}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.priority}}</td>
+                <td class="btnItems">
+                    <!--<button class="btn btn-success" ng-click="columnDetail(item);">查看详情</button>-->
+                    <button class="btn btn-primary" ng-click="categoryEdit(item);">编辑</button>
+                    <button class="btn btn-danger" ng-click="categoryDelete(item);">删除</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <dialog-book title="添加图书栏目" add="添加" state="dialogState" alert-confirm="onConfirm();" datacolumn="data"></dialog-book>
+    <dialog-book title="编辑图书栏目" add="保存" state="diaState" alert-edit="onEdit();" datacolumn="data"></dialog-book>
+    <dialog-del title="删除图书栏目" del="删除" state="diaDelState" alert-del="onDel();" clear="column" ></dialog-del>
+</div>
